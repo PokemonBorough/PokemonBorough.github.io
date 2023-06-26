@@ -1,10 +1,18 @@
 *{
+    height: 100%;
     margin: 0;
-    padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
-
+.bannerimg{
+    background-image: url("images/PB_Banner.png");
+    height: 27%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
 .main{
     background: linear-gradient(to bottom right, #e5c689, #f8c29f);
     min-height: 100vh;
@@ -17,3 +25,4 @@ nav{
     align-items: center;
     padding: 20px 8%;
 }
+
