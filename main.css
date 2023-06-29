@@ -31,6 +31,7 @@ body {
 .banner {
     /* More banner styling thingies */
     /* Example: */
+    background-image: url("images/PB_Banner.png");
     height: 300px;
     background-color: #ccc;
 }
