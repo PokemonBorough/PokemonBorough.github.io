@@ -15,6 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+       
 }
 
 .logo {
@@ -34,12 +35,17 @@ body {
     /* Example: */
     height: 220px;
     background-color: #ccc;
+    width: 100%;
+    height: auto;
 }
 
 .banner-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    width: 200%;
+    height: auto;
 }
 
 .navigation-bar {
