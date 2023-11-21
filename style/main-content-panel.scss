@@ -1,0 +1,64 @@
+/* Compile Using Sass */
+
+$nav-bar-background-color: #333;
+$nav-bar-color: #fff;
+/*
+    From My Research 1 rem Is Typically Close To 16px
+*/
+$panel-header-size: 1.5rem;
+$panel-border-radius: 10px;
+$main-panel-height: 95vh;
+
+.panel-text-header {
+    font-size: $panel-header-size;
+    text-align: center;
+}
+
+@mixin content-panel {
+    display: grid;
+    grid-template-rows: min-content auto;
+    border: $nav-bar-background-color 1px solid;
+
+    .panel-text-header {
+        margin: 1rem;
+        overflow: hidden;
+        text-decoration: underline;
+    }
+
+    .content-panel-content {
+        margin: 1rem;
+        text-align: center;
+    }
+
+}
+
+.panel {
+    @include content-panel();
+}
+
+/*
+    Using Other Units Than `px` Because It Helps With Resizability
+    And A Few Other Benefits For Other Platforms,
+    I Dont Know Much About Them Unfortunately
+*/
+.main-content-panel {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 1rem;
+    box-sizing: border-box;
+    height: $main-panel-height;
+
+    :first-child {
+        border-top-left-radius: $panel-border-radius;
+        border-bottom-left-radius: $panel-border-radius;
+    }
+    :last-child {
+        border-top-right-radius: $panel-border-radius;
+        border-bottom-right-radius: $panel-border-radius;
+    }
+}
+
+.navigation-bar {
+    position: sticky;
+    top: 0;
+}

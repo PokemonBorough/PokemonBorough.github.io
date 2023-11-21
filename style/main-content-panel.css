@@ -1,0 +1,51 @@
+/* Compile Using Sass */
+/*
+    From My Research 1 rem Is Typically Close To 16px
+*/
+.panel-text-header {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.panel {
+  display: grid;
+  grid-template-rows: min-content auto;
+  border: #333 1px solid;
+}
+.panel .panel-text-header {
+  margin: 1rem;
+  overflow: hidden;
+  text-decoration: underline;
+}
+.panel .content-panel-content {
+  margin: 1rem;
+  text-align: center;
+}
+
+/*
+    Using Other Units Than `px` Because It Helps With Resizability
+    And A Few Other Benefits For Other Platforms,
+    I Dont Know Much About Them Unfortunately
+*/
+.main-content-panel {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 1rem;
+  box-sizing: border-box;
+  height: 95vh;
+}
+.main-content-panel :first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main-content-panel :last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navigation-bar {
+  position: sticky;
+  top: 0;
+}
+
+/*# sourceMappingURL=main-content-panel.css.map */

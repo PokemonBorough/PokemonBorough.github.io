@@ -1,0 +1,84 @@
+/* Compile Using Sass */
+/*
+    11/21/2023:
+                - Removed Unreachable/Unused Styling,
+                - Mostly Removed Styles Resembling: ".menu ul",
+                    As The ul Is The Menu And Has No ul Children Elements
+*/
+/* Variables Commonly Used */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.top-bar {
+  background-color: #333;
+  color: #FF4242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.login-button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+.banner {
+  /* More banner styling thingies */
+  background-position: center;
+  background-color: #ccc;
+  width: 100%;
+  height: auto;
+}
+
+.banner-img {
+  display: block;
+  max-width: 100%;
+  /* Width Will Not Exceed 100%, This Will Just Be Dead Code */
+  width: 200%;
+  height: auto;
+  /*
+      This Code Is For The Image `alt` Attribute,
+      It Displays The Text "Pokemon Borough" Instead Of The Banner Image,
+      This Will Not Effect The Image If Its Rendered Normally,
+      It Should Only Effect The `alt` Attribute
+  */
+  text-align: center;
+  font-size: 25pt;
+}
+
+.navigation-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

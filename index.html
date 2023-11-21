@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Pokemon Borough</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main-content-panel.css">
 </head>
 <body>
     <div class="top-bar">
@@ -11,29 +12,64 @@
     </div>
 
     <div class="banner">
-        <img class="banner-img" src="images/PB_Banner.png">
+        <img class="banner-img" src="images/PB_Banner.png" alt="Pokemon Borough">
     </div>
 
     <div class="navigation-bar">
         <ul class="menu">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Rules & FAQ</a></li>
-            <li><a href="#">Group Info</a></li>
-            <li><a href="#">Shops</a></li>
-            <li><a href="#">Activities</a></li>
-            <li><a href="#">Exchequer</a></li>
-            <li><a href="#">Team Help</a></li>
+            <!--
+                The `title` Attribute Shows The Text In The Quotes After Hovering Over It For A Second,
+                There Are Some Accessiblity Concerns For Keyboard/Screen Reader Users:
+                    "Don't do this! It's not accessible for keyboard or screen reader users. More info:
+                    https://mediacurrent.medium.com/ and
+                    https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role"
+                From:
+                    https://stackoverflow.com/questions/7503183/what-is-the-easiest-way-to-create-an-html-mouseover-tool-tip
+            -->
+            <li><a href="#" title="Go To The Homepage Of Pokemon Borough">Homepage</a></li>
+            <li><a href="#" title="Go To The Rules And Frequently Asked Questions">Rules & FAQ</a></li>
+            <li><a href="#" title="*Imma Be Real, I Dont Know What This Means*">Group Info</a></li>
+            <li><a href="#" title="Go To The Shops">Shops</a></li>
+            <li><a href="#" title="Go To Activities">Activities</a></li>
+            <li><a href="#" title="*I Think This Is Player Info*">Exchequer</a></li>
+            <li><a href="#" title="Go Get Help From Staff">Team Help</a></li>
         </ul>
     </div>
+
+    <section class="main-content-panel">
+        <div class="panel" id="panel-one">
+            <h1 class="panel-text-header">
+                Current News?
+            </h1>
+            <div class="content-panel-content">
+                Other Item Section
+            </div>
+        </div>
+        <div class="panel" id="panel-two">
+            <h1 class="panel-text-header">
+                Pokemon Borough Welcomes You!
+            </h1>
+            <div class="content-panel-content">
+                Other Items Section
+            </div>
+        </div>
+        <div class="panel" id="panel-three">
+            <h1 class="panel-text-header">
+                Group Status
+            </h1>
+            <div class="content-panel-content">
+                Other Items Section
+            </div>
+        </div>
+    </section>
 
       
     <script>
         function myFunction(x) {
-        x.classList.toggle("change");
-    }
+            x.classList.toggle("change");
+        }
     </script>
     <!-- Rest of the webpage stuffs here? -->
 
 </body>
 </html>
-
